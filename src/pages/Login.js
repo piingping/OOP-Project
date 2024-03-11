@@ -22,16 +22,16 @@ const { setAuth , setRole} = useAuth();
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Implement authentication logic (e.g., API call)
-    const isLoginSuccessful = true; // Simulate successful login
+
+    const isLoginSuccessful = true; 
 
     if (isLoginSuccessful) {
       setRole('lender')
       setAuth(true);
       navigate('/');
     } else {
-      console.error('Login failed:'); // Log error message
-      // Handle failed login scenario (e.g., display error message)
+      console.error('Login failed:'); 
+    
     }
   };
 
